@@ -1,0 +1,22 @@
+{
+	"name": "AzureSqlDatabase1",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=sysdemo.database.windows.net;Initial Catalog=adventureworksdw;User ID=student",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "asakeyvaultnyx9u42",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "sqlsysdemo"
+			}
+		},
+		"connectVia": {
+			"referenceName": "AutoResolveIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
