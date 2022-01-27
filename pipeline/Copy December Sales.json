@@ -159,6 +159,57 @@
 						"type": "DatasetReference"
 					}
 				]
+			},
+			{
+				"name": "Notebook 1",
+				"type": "SynapseNotebook",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebook": {
+						"referenceName": "Notebook 1",
+						"type": "NotebookReference"
+					},
+					"snapshot": true,
+					"sparkPool": {
+						"referenceName": "SparkPool01",
+						"type": "BigDataPoolReference"
+					}
+				}
+			},
+			{
+				"name": "Notebook1",
+				"type": "DatabricksNotebook",
+				"dependsOn": [
+					{
+						"activity": "Notebook 1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"notebookPath": "/Users/derek.pike@systecs.co.uk/04-Working-With-Dataframes/2.Use-common-dataframe-methods"
+				},
+				"linkedServiceName": {
+					"referenceName": "MyDatabricks",
+					"type": "LinkedServiceReference"
+				}
 			}
 		],
 		"annotations": [],
