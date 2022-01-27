@@ -1,0 +1,48 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"workspaceName": {
+			"value": "asaworkspacenyx9u42"
+		},
+		"MyDatabricks_accessToken": {
+			"value": ""
+		},
+		"asacosmosdb01_connectionString": {
+			"value": ""
+		},
+		"asadatalakenyx9u42_accountKey": {
+			"value": ""
+		},
+		"asastorenyx9u42_connectionString": {
+			"value": ""
+		},
+		"asaworkspacenyx9u42-WorkspaceDefaultSqlServer_connectionString": {
+			"value": ""
+		},
+		"sqlpool01_connectionString": {
+			"value": ""
+		},
+		"sqlpool01_highperf_connectionString": {
+			"value": ""
+		},
+		"sqlpool01_import01_connectionString": {
+			"value": ""
+		},
+		"sqlpool01_workload01_connectionString": {
+			"value": ""
+		},
+		"sqlpool01_workload02_connectionString": {
+			"value": ""
+		},
+		"asadatalakenyx9u42_properties_typeProperties_url": {
+			"value": "https://asadatalakenyx9u42.dfs.core.windows.net"
+		},
+		"asakeyvaultnyx9u42_properties_typeProperties_baseUrl": {
+			"value": "https://asakeyvaultnyx9u42.vault.azure.net/"
+		},
+		"asaworkspacenyx9u42-WorkspaceDefaultStorage_properties_typeProperties_url": {
+			"value": "https://asadatalakenyx9u42.dfs.core.windows.net"
+		}
+	}
+}
