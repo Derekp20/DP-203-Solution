@@ -2,7 +2,7 @@
 	"name": "asal400_december_sales",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "asadatalakenyx9u42",
+			"referenceName": "asadatalakeoc0erxk",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
